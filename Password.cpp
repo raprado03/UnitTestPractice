@@ -26,3 +26,20 @@ int Password::count_leading_characters(string phrase){
 bool Password::has_mixed_case(string pass){
   return false;
 }
+
+unsigned int unique_characters(string phrase){
+  int character_count = 0;
+  char c, s;
+
+  for(int i = 0; i < phrase.length; i++){
+    count++;
+
+    for(int j = i; j < (phrase.length); j++){
+
+      if((phrase[i] == phrase[j]) && (i != j)){
+
+        count--;
+      }
+    }
+  }
+}
